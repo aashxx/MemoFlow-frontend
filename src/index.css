@@ -1,13 +1,109 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+/* MemoFlow logo in Navbar */
+.logo {
+  font-family: 'Lobster', sans-serif;
+  font-size: 2rem;
+  color: #673ab7;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.logo:hover {
+  color: blueviolet;
+}
+
+/* All buttons color -->  #673ab7*/
+.btn {
+  background-color: #673ab7;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.btn:hover {
+  background-color: blueviolet;
+}
+
+
+.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap-reverse;
+}
+
+/* All forms border --> #673ab7 */
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  border: 2px solid  #673ab7;
+  border-radius: 20px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* All 'Your Notes' items border --> #673ab7 */
+.note-item {
+  border: 2px solid  #673ab7;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* All delete and edit icon buttons in .note-item color --> #673ab7 */
+i {
+  cursor: pointer;
+  color: #673ab7;
+  font-weight: bold;
+}
+
+
+/* Footer component */
+footer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 830px) {
+  .login-page {
+    flex-direction: column;
+    gap: 75px;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .intro p {
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+  .h1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .memo {
+    margin-top: -23px;
+  }
 }
