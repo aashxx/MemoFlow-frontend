@@ -3,7 +3,7 @@ import NoteContext from "./NoteContext"; // Context API
 
 const NoteState = (props) => {
 
-    // Connnecting to the backend server
+    // Connecting to the backend server
     const host = "https://memoflow-backend.vercel.app";
     let notesInitial = []
     const [notes, setNotes] = useState(notesInitial);
